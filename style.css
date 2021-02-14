@@ -1,0 +1,398 @@
+@font-face {
+    font-family: 'D-DIN';
+    src: url('fonts/d-din/D-DIN.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-DIN-Bold';
+    src: url('fonts/d-din/D-DIN-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-DIN-Italic';
+    src: url('fonts/d-din/D-DIN-Italic.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'D-DINCondensed';
+    src: url('fonts/d-din/D-DINCondensed.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'D-DIN', 'Verdana', 'Arial', 'sans-serif';
+    color: white;
+    background-color: black;   
+    background-image: url("images/bgimg_og.jpg"); 
+}
+
+header {
+    display: block;
+    height: 175px; 
+    margin-bottom: 20px;
+    padding-bottom: 40px; 
+    background-color: black;   
+}
+
+.logo img {
+    display: block;
+    height: 150px;
+    width: auto;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+header .nav-bar {
+    display: inline;
+}
+
+header .nav-bar a {
+    display: inline;
+    margin-left: 35px;
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+}
+
+header .nav-bar a:hover {
+    background-color: darkgray;
+}
+
+header .nav-bar .active-page a {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.section-head {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.section-head h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.launches-details {
+    width: 100%;
+}
+
+.launches-details img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.launches-details iframe {
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.launches-details a {
+    text-align: center;
+}
+
+.launches-details p {
+    text-align: center;
+}
+
+.history-details {
+    width: 100%;
+}
+
+.history-details h3 {
+    text-align: center;
+}
+
+.history-details p {    
+    text-align: center;
+}
+
+.history-details a {
+    text-align: center;
+}
+
+.company-details {
+    width: 50%;
+}
+
+.company-details p {
+    display: block;
+    text-align: left;
+}
+
+.company-details a {
+    display: inline;
+    text-decoration: underline;
+    margin-left: 25px;
+    text-align: center;
+}
+
+.company-details a:hover {
+    text-decoration: none;
+}
+
+.rockets-details {
+    width: 100%;
+}
+
+.rockets-details h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.rockets-details p {
+    width: 50%;
+    text-align: left;
+}
+
+.rockets-details img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ships-details {
+    width: 100%;
+}
+
+.ships-details h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.ships-details p {
+    width: 50%;
+    text-align: left;
+}
+
+.ships-details img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dragons-details {
+    width: 100%;
+}
+
+.dragons-details h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.dragons-details p {
+    width: 50%;
+    text-align: left;
+}
+
+.dragons-details img {
+    display: block;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.page-head h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.month-nav {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.month-nav a {
+    display: inline;
+    font-size: 1.1rem;
+    text-decoration: underline;
+    text-align: left;
+    color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.month-nav a:hover {
+    background-color: darkgray;
+    text-decoration: none;
+}
+
+.schedule-head {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.schedule-head a {    
+    color: white;    
+    text-decoration: underline;
+}
+
+.schedule-head a:hover {
+    background-color: darkgray;
+    text-decoration: none;
+}
+
+.schedule-head h2 {    
+    text-align: center;
+}
+
+.schedule-block {
+    width: 50%;
+    background-color: darkgray;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 1rem;
+}
+
+.schedule-block p {
+    display: block;
+    text-align: left;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.schedule-date {
+    font-size: 1.2rem;
+}
+
+.schedule-title {
+    font-size: 1.2rem;
+}
+
+.launch-top {
+    margin-top: 10px;
+}
+
+.launch-bottom {
+    margin-bottom: 10px;
+}
+
+.form-container {
+    width: 70%;
+    background-color: darkgray;
+    color: black;
+    margin: 0 auto;
+    margin-top: 40px;
+    border-radius: 1rem;
+    padding-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 10px;    
+    padding-top: 10px;
+    text-align: center;
+}
+
+input {
+    display: block;
+    width: 70%;
+    font-size: 1.1rem;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 5px;    
+}
+
+textarea {
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;    
+}
+
+button {
+    display: block;    
+    background-color: darkgreen;
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;    
+}
+
+button:hover {
+    background-color: green;
+}
+
+.message {
+    width: 100%;
+    display: block;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.messageSuccess {
+    border: 1px solid darkgreen;
+    padding: 1rem;
+    color: darkgreen;
+}
+
+.messageError {
+    border: 1px solid darkred;
+    padding: 1rem;
+    color: darkred;
+}
+
+.input-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+footer {
+    height: 125px;
+    background-color: black; 
+    margin-top: 40px;
+}
+
+footer p {
+    display: inline;
+    margin-left: 25px;
+}
+
+footer a {
+    display: inline;
+    margin-left: 25px;
+    text-decoration: underline;
+    color: white;
+}
+
+footer div {
+    padding-top: 50px;
+}

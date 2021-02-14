@@ -1,0 +1,119 @@
+<!DOCTYPE Html>
+
+<html lang="en">
+
+<head>    
+  <meta name="keywords" content="spaceX, launches, space, x, contact">
+  <meta name="description" content="Welcome to the contact page for the spaceX launches site. Any queries
+                                    or suggestions? Get in touch here.">     
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+  <link rel="stylesheet" href="style.css"> 
+  <title>SpaceX-Launches - Contact</title>
+</head>
+
+<body>
+
+    <header>
+
+        <div class="logo">
+
+            <a href="index.html"><img src="images/spaceXlogo_launches.jpg" title="logo" alt="SpaceX Launches"></a>
+            
+        </div>    
+
+        
+        <div class="nav-bar">
+                
+            <a href="index.html">Home</a>
+            <a href="vehicles.html">Vehicles</a>
+            <a href="schedule.html">Schedule</a>
+            <a class="active-page" href="contact.html">Contact</a>                
+                
+        </div>                  
+        
+    </header>    
+
+    <body>      
+
+        <form class="form-container">
+
+            <div id="notification"></div>
+
+            <div>
+
+                <label>
+                    
+                    Name:*
+                    <input name="name" id="fullName"/>
+
+                </label>
+                <div class="input-error" id="input-error-name">Name is required.</div>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    Subject: (at least 10 characters)*
+                    <input name="subject" id="subject"/>
+
+                </label>
+                <div class="input-error" id="input-error-subject">Subject must be at least 10 characters.</div>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    Email: (eg/ name@isp.com)*
+                    <input name="email" id="email"/>
+
+                </label>
+                <div class="input-error" id="input-error-email">Email is required in the correct format.</div>
+
+            </div>
+
+            <div>
+
+                <label>
+
+                    Message: (at least 25 characters)*
+                    <textarea name="message" id="message" rows="10"></textarea>
+
+                </label>
+                <div class="input-error" id="input-error-message">Message must be at least 25 characters.</div>
+
+            </div>
+
+            <div>
+
+                <button type="button" class="button">Send</button>
+
+            </div>
+
+        </form>
+
+    </body>
+ 
+    <footer>       
+
+        <div>
+
+            <p>&copy; SpaceX 2021</p>
+
+            <a href="https://www.youtube.com">YouTube</a>
+            <a href="https://www.instagram.com">Instagram</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+
+        </div>                
+    
+    </footer>
+
+    <script src="js/contact.js"></script>
+
+</body>
+</html>
