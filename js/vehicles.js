@@ -13,27 +13,29 @@ async function fetchRockets () {
         console.log(rocketsJson);
         const rockets = rocketsJson;
         rocketsContainer.innerHTML = "";
-        for (let i = 0; i < rockets.length; i++) {
-            const rocketsName = rockets[i].name;
-            const rocketsType = rockets[i].type;
-            const launchCost = rockets[i].cost_per_launch;
-            const launchSuccess = rockets[i].success_rate_pct;
-            const rocketsDescription = rockets[i].description;
-            const flickrImg02 = rockets[i].flickr_images[1];
-            rocketsContainer.innerHTML += `<div class="rockets-details">
-                                                <h3>${rocketsName}</h3>
-                                                <p>Type: ${rocketsType}</p>
-                                                <p>Cost Per Launch: $${launchCost}</p>
-                                                <p>Launch Success Rate: ${launchSuccess}</p>
-                                                <img src="${flickrImg02}" title="falcon heavy rocket" alt="falcon heavy rocket stationary">
-                                                <p>Description: ${rocketsDescription}</p>`
-        }
-    }
-    catch (error) {
+        createRocketsHtml(rocketsJson);
+        } catch (error) {
         console.log(error);
         rocketsContainer.innerHTML = `<p>There was an error fetching the data from the server.
                                           If the problem persists, please contact support.</p>`
     }
+function createRocketsHtml(rockets) {
+    
+        const rocketsName = rockets.name;
+        const rocketsType = rockets.type;
+        const launchCost = rockets.cost_per_launch;
+        const launchSuccess = rockets.success_rate_pct;
+        const rocketsDescription = rockets.description;
+        const flickrImg02 = rockets.flickr_images[1];
+        rocketsContainer.innerHTML += 
+                                            `<h3>${rocketsName}</h3>
+                                            <p>Type: ${rocketsType}</p>
+                                            <p>Cost Per Launch: $${launchCost}</p>
+                                            <p>Launch Success Rate: ${launchSuccess}</p>
+                                            <img src="${flickrImg02}" title="falcon heavy rocket" alt="falcon heavy rocket stationary">
+                                            <p>Description: ${rocketsDescription}</p>`
+    
+}
 }
 fetchRockets();
 
@@ -44,23 +46,25 @@ async function fetchShips () {
         console.log(shipsJson);
         const ships = shipsJson;
         shipsContainer.innerHTML = "";
-        for (let i = 0; i < ships.length; i++) {
-            const shipsName = ships[i].name;
-            const shipsType = ships[i].type;
-            const shipsImg = ships[i].image;
-            const shipsLink = ships[i].link;            
-            shipsContainer.innerHTML += `<div class="ships-details">
-                                                <h3>${shipsName}</h3>
-                                                <p>Ship Type: ${shipsType}</p>                                                
-                                                <img src="${shipsImg}" title="go pursuit cargo ship" alt="go pursuit cargo ship">
-                                                <a href="${shipsLink}">Ship Details</a>`
-        }
-    }
-    catch (error) {
+        createShipsHtml(shipsJson);
+        } catch (error) {
         console.log(error);
         shipsContainer.innerHTML = `<p>There was an error fetching the data from the server.
                                           If the problem persists, please contact support.</p>`
     }
+function createShipsHtml(ships) {
+    
+        const shipsName = ships.name;
+        const shipsType = ships.type;
+        const shipsImg = ships.image;
+        const shipsLink = ships.link;            
+        shipsContainer.innerHTML += 
+                                            `<h3>${shipsName}</h3>
+                                            <p>Ship Type: ${shipsType}</p>                                                
+                                            <img src="${shipsImg}" title="go pursuit cargo ship" alt="go pursuit cargo ship">
+                                            <a href="${shipsLink}">Ship Details</a>`
+    
+}
 }
 fetchShips();
 
@@ -71,23 +75,25 @@ async function fetchDragons () {
         console.log(dragonsJson);
         const dragons = dragonsJson;
         dragonsContainer.innerHTML = "";
-        for (let i = 0; i < dragons.length; i++) {
-            const dragonsName = dragons[i].name;
-            const dragonsType = dragons[i].type;
-            const dragonsImg = dragons[i].flickr_images[2];  
-            const dragonsDescription = dragons[i].description;                      
-            dragonsContainer.innerHTML += `<div class="dragons-details">
-                                                <h3>${dragonsName}</h3>
-                                                <p>Type: ${dragonsType}</p> 
-                                                <img src="${dragonsImg}" title="dragon capsule" alt="dragon capsule being fitted to rocket"> 
-                                                <p>Description: ${dragonsDescription}</p>`
-        }
-    }
-    catch (error) {
+        createDragonsHtml(dragonsJson);
+        } catch (error) {
         console.log(error);
         dragonsContainer.innerHTML = `<p>There was an error fetching the data from the server.
                                           If the problem persists, please contact support.</p>`
     }
+function createDragonsHtml(dragons) {
+    
+        const dragonsName = dragons.name;
+        const dragonsType = dragons.type;
+        const dragonsImg = dragons.flickr_images[2];  
+        const dragonsDescription = dragons.description;                      
+        dragonsContainer.innerHTML += 
+                                            `<h3>${dragonsName}</h3>
+                                            <p>Type: ${dragonsType}</p> 
+                                            <img src="${dragonsImg}" title="dragon capsule" alt="dragon capsule being fitted to rocket"> 
+                                            <p>Description: ${dragonsDescription}</p>`
+    
+}
 }
 fetchDragons();
 

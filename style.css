@@ -65,9 +65,9 @@ header .nav-bar a:hover {
     background-color: darkgray;
 }
 
-header .nav-bar .active-page a {
-    font-size: 1.5rem;
-    text-decoration: underline;
+header .active-page {
+    font-size: 1.5rem!important;
+    text-decoration: underline!important;
 }
 
 .section-head {
@@ -84,11 +84,11 @@ header .nav-bar .active-page a {
     margin-bottom: 20px;
 }
 
-.launches-details {
+.launches {
     width: 100%;
 }
 
-.launches-details img {
+.launches img {
     display: block;
     width: 50%;
     height: auto;
@@ -97,7 +97,7 @@ header .nav-bar .active-page a {
     margin-bottom: 20px;
 }
 
-.launches-details iframe {
+.launches iframe {
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -111,57 +111,67 @@ header .nav-bar .active-page a {
     text-align: center;
 }
 
-.history-details {
+.history {
     width: 100%;
 }
 
-.history-details h3 {
+.history h3 {
     text-align: center;
 }
 
-.history-details p {    
-    text-align: center;
-}
-
-.history-details a {
-    text-align: center;
-}
-
-.company-details {
+.history p {    
     width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
-.company-details p {
+.history a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.company {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.company p {
     display: block;
     text-align: left;
 }
 
-.company-details a {
+.company a {
     display: inline;
     text-decoration: underline;
+    margin: 0 auto;
     margin-left: 25px;
     text-align: center;
+    color: white;    
 }
 
-.company-details a:hover {
+.company a:hover {
     text-decoration: none;
 }
 
-.rockets-details {
+.rockets {
     width: 100%;
 }
 
-.rockets-details h3 {
+.rockets h3 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.rockets-details p {
+.rockets p {
     width: 50%;
     text-align: left;
+    margin: 0 auto;
 }
 
-.rockets-details img {
+.rockets img {
     display: block;
     width: 50%;
     height: auto;
@@ -170,21 +180,22 @@ header .nav-bar .active-page a {
     margin-bottom: 10px;
 }
 
-.ships-details {
+.ships {
     width: 100%;
 }
 
-.ships-details h3 {
+.ships h3 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.ships-details p {
+.ships p {
     width: 50%;
     text-align: left;
+    margin: 0 auto;
 }
 
-.ships-details img {
+.ships img {
     display: block;
     width: 50%;
     height: auto;
@@ -193,21 +204,29 @@ header .nav-bar .active-page a {
     margin-bottom: 10px;
 }
 
-.dragons-details {
+.ships a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: white;    
+}
+
+.dragons {
     width: 100%;
 }
 
-.dragons-details h3 {
+.dragons h3 {
     text-align: center;
     margin-bottom: 10px;
 }
 
-.dragons-details p {
+.dragons p {
     width: 50%;
     text-align: left;
+    margin: 0 auto;
 }
 
-.dragons-details img {
+.dragons img {
     display: block;
     width: 50%;
     height: auto;
@@ -293,6 +312,11 @@ header .nav-bar .active-page a {
 
 .launch-bottom {
     margin-bottom: 10px;
+}
+
+.contact {
+    width: 100%;
+    text-align: center;
 }
 
 .form-container {
